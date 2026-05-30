@@ -970,6 +970,25 @@
         @media (prefers-reduced-motion: reduce) {
             * { animation: none !important; transition: none !important; }
         }
+
+        /* === CHURCH WARNING === */
+        .church-warning {
+            background: rgba(255, 235, 235, 0.95);
+            border: 1px solid #c0392b;
+            color: #c0392b;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.85rem;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        .church-warning strong {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
+        }
     </style>
 </head>
 <body>
@@ -1011,7 +1030,11 @@
                     </div>
 
                     <p class="hero-date">11 · 07 · 2026</p>
-                    <p class="hero-schedule">15h30 – En l'Église de Saint-Étienne de Briare (Loiret, 45)</p>
+                    <div class="church-warning">
+                        <strong>⚠ Attention ! Changement d'église en raison de travaux de rénovation.</strong>
+                        Attenzione! Cambio della chiesa a causa dei lavori di ristrutturazione.
+                    </div>
+                    <p class="hero-schedule">15h30 – Église Saint-Aignan de Bonny-sur-Loire (Loiret, 45)</p>
                     <p class="hero-schedule-secondary">18h – Château de la Bussière</p>
 
                     <a href="#" class="cta-button" onclick="showPage('rsvp')">RSVP</a>
@@ -1059,19 +1082,14 @@
                 <div class="location-grid">
                     <!-- Chiesa -->
                     <div class="location-card">
-                        <h3>Église Saint-Étienne de Briare</h3>
+                        <h3>Église Saint-Aignan de Bonny-sur-Loire</h3>
                         <p class="time">15h30 – Messe</p>
-                        <p class="address">17 Place de la République, 45250 Briare (Loiret, 45)</p>
+                        <p class="address">45420 Bonny-sur-Loire</p>
                         <p class="directions">Environ 2h de voiture de Paris via A6 et A77. Parking disponible sur la place de l'église.</p>
                         <p class="directions-it">Circa due ore di macchina da Parigi prendendo la A6 e la A77. Parcheggio disponibile sulla piazza della chiesa.</p>
-                        <div class="transport-box">
-                            <h5>En train / In treno</h5>
-                            <p>Départ de Paris Bercy – prendre le train du matin – 1h30 de trajet</p>
-                            <p style="font-style: italic;">Partenza da Paris Bercy – prendere il treno del mattino – 1h30 di viaggio</p>
-                        </div>
                         <div class="location-media">
-                            <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.5!2d2.7369!3d47.6347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ef3a4b8a8a8a8a%3A0x0!2sPlace%20de%20la%20R%C3%A9publique%2C%20Briare!5e0!3m2!1sfr!2sfr!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
-                            <img src="assets/chiesa.jpg" alt="Église Saint-Étienne" class="chiesa-img">
+                            <iframe class="map-embed" src="https://maps.google.com/maps?q=Eglise+Saint-Aignan+Bonny-sur-Loire+45420&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                            <img src="assets/chiesa.jpg" alt="Église Saint-Aignan de Bonny-sur-Loire" class="chiesa-img">
                         </div>
                     </div>
 
@@ -1294,29 +1312,6 @@
                 </header>
 
                 <div class="visiter-scroll">
-                    <div class="visiter-section">
-                        <p>La petite ville de Briare, à 14 km du château, doit sa notoriété aux émaux qui firent la renommée de la ville, et dont la fabrication perdure encore in situ, profitant des terres argilo-sablonneuses des alentours.</p>
-                        <p class="italian">La cittadina di Briare, a 14 km dal castello, deve la sua notorietà agli smalti che resero famosa la città, la cui fabbricazione continua ancora oggi grazie ai terreni argilloso-sabbiosi dei dintorni.</p>
-                        <div class="visiter-images">
-                            <img src="assets/briare_emaux.jpg" alt="Émaux de Briare">
-                        </div>
-                    </div>
-
-                    <div class="visiter-divider"></div>
-
-                    <div class="visiter-section">
-                        <h3>Église Saint-Étienne de Briare</h3>
-                        <p>L'église où se déroulera la messe présente en façade et à l'intérieur un cycle exceptionnel de mosaïques en émaux colorés du 19ème siècle, inspirés du style romano-byzantin, réalisés et offerts par la manufacture des Émaux de la ville.</p>
-                        <p class="italian">La chiesa dove si svolgerà la messa presenta sulla facciata e all'interno un ciclo eccezionale di mosaici in smalti colorati del XIX secolo, ispirati allo stile romano-bizantino, realizzati e offerti dalla manifattura degli Smalti della città.</p>
-                        <div class="visiter-images">
-                            <img src="assets/eglise_facade.jpg" alt="Église façade">
-                            <img src="assets/eglise_interieur1.jpg" alt="Mosaïques">
-                            <img src="assets/eglise_interieur2.jpg" alt="Intérieur">
-                        </div>
-                    </div>
-
-                    <div class="visiter-divider"></div>
-
                     <div class="visiter-section">
                         <h3>Pont-Canal de Briare</h3>
                         <p>Élu « Monument préféré des Français » en 2021, cet ouvrage d'art exceptionnel construit par les Ateliers Eiffel à la fin du 19ème siècle permet aux bateaux de la Loire d'enjamber en navigant un canal latéral sur plus de 600m. Très belle balade à pied sur le pont, avec petits cafés-restaurants et parking gratuit.</p>
